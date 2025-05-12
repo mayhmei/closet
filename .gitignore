@@ -1,5 +1,5 @@
-# 忽略所有jpg文件
-*.jpg
+# 忽略images目录下的jpg文件
+images/**/*.jpg
 
 # 忽略node_modules
 node_modules/
