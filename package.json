@@ -1,0 +1,16 @@
+{
+  "name": "ootd",
+  "version": "1.0.0",
+  "description": "+ 格式：季节_分类.jpg + 季节标签：     + spring     + summer     + autumn     + winter + 分类标签     + shirt     + pant     + skirt     + sock     + shoe     + accessory     + ootd",
+  "main": "clear-cache.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

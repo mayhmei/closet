@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的衣橱 - OOTD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add-outfit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>我的衣橱</h1>
+        <p>个人穿搭管理系统</p>
+    </header>
+
+    <div class="page-container">
+        <!-- 垂直导航栏 -->
+        <nav class="vertical-nav">
+            <div class="nav-section">
+                <div class="nav-title">按季节浏览</div>
+                <ul class="season-tabs">
+                    <li data-season="spring" class="active">
+                        <i class="fas fa-seedling"></i> 春季
+                    </li>
+                    <li data-season="summer">
+                        <i class="fas fa-sun"></i> 夏季
+                    </li>
+                    <li data-season="autumn">
+                        <i class="fas fa-leaf"></i> 秋季
+                    </li>
+                    <li data-season="winter">
+                        <i class="fas fa-snowflake"></i> 冬季
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">按类型浏览</div>
+                <ul class="type-tabs">
+                    <li data-type="all" class="active">
+                        <i class="fas fa-th-large"></i> 全部
+                    </li>
+                    <li data-type="shirt">
+                        <i class="fas fa-tshirt"></i> 上衣
+                    </li>
+                    <li data-type="pant">
+                        <i class="fas fa-socks"></i> 裤子
+                    </li>
+                    <li data-type="skirt">
+                        <i class="fas fa-female"></i> 裙子
+                    </li>
+                    <li data-type="sock">
+                        <i class="fas fa-socks"></i> 袜子
+                    </li>
+                    <li data-type="shoe">
+                        <i class="fas fa-shoe-prints"></i> 鞋子
+                    </li>
+                    <li data-type="accessory">
+                        <i class="fas fa-hat-wizard"></i> 配饰
+                    </li>
+                    <li data-type="ootd">
+                        <i class="fas fa-user-tie"></i> OOTD
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 内容区域 -->
+        <main>
+            <!-- 季节视图 -->
+            <div id="season-view" class="view-container active">
+                <section id="spring" class="season-section active">
+                    <h2>春季穿搭</h2>
+                    <div class="type-filter">
+                        <span class="filter-label">筛选：</span>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" data-filter="all">全部</button>
+                            <button class="filter-tag" data-filter="shirt">上衣</button>
+                            <button class="filter-tag" data-filter="pant">裤子</button>
+                            <button class="filter-tag" data-filter="skirt">裙子</button>
+                            <button class="filter-tag" data-filter="sock">袜子</button>
+                            <button class="filter-tag" data-filter="shoe">鞋子</button>
+                            <button class="filter-tag" data-filter="accessory">配饰</button>
+                            <button class="filter-tag" data-filter="ootd">OOTD</button>
+                        </div>
+                    </div>
+                    <div class="outfit-grid">
+                        <!-- 这里将显示春季穿搭 -->
+                    </div>
+                </section>
+
+                <section id="summer" class="season-section">
+                    <h2>夏季穿搭</h2>
+                    <div class="type-filter">
+                        <span class="filter-label">筛选：</span>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" data-filter="all">全部</button>
+                            <button class="filter-tag" data-filter="shirt">上衣</button>
+                            <button class="filter-tag" data-filter="pant">裤子</button>
+                            <button class="filter-tag" data-filter="skirt">裙子</button>
+                            <button class="filter-tag" data-filter="sock">袜子</button>
+                            <button class="filter-tag" data-filter="shoe">鞋子</button>
+                            <button class="filter-tag" data-filter="accessory">配饰</button>
+                            <button class="filter-tag" data-filter="ootd">OOTD</button>
+                        </div>
+                    </div>
+                    <div class="outfit-grid">
+                        <!-- 这里将显示夏季穿搭 -->
+                    </div>
+                </section>
+
+                <section id="autumn" class="season-section">
+                    <h2>秋季穿搭</h2>
+                    <div class="type-filter">
+                        <span class="filter-label">筛选：</span>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" data-filter="all">全部</button>
+                            <button class="filter-tag" data-filter="shirt">上衣</button>
+                            <button class="filter-tag" data-filter="pant">裤子</button>
+                            <button class="filter-tag" data-filter="skirt">裙子</button>
+                            <button class="filter-tag" data-filter="sock">袜子</button>
+                            <button class="filter-tag" data-filter="shoe">鞋子</button>
+                            <button class="filter-tag" data-filter="accessory">配饰</button>
+                            <button class="filter-tag" data-filter="ootd">OOTD</button>
+                        </div>
+                    </div>
+                    <div class="outfit-grid">
+                        <!-- 这里将显示秋季穿搭 -->
+                    </div>
+                </section>
+
+                <section id="winter" class="season-section">
+                    <h2>冬季穿搭</h2>
+                    <div class="type-filter">
+                        <span class="filter-label">筛选：</span>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" data-filter="all">全部</button>
+                            <button class="filter-tag" data-filter="shirt">上衣</button>
+                            <button class="filter-tag" data-filter="pant">裤子</button>
+                            <button class="filter-tag" data-filter="skirt">裙子</button>
+                            <button class="filter-tag" data-filter="sock">袜子</button>
+                            <button class="filter-tag" data-filter="shoe">鞋子</button>
+                            <button class="filter-tag" data-filter="accessory">配饰</button>
+                            <button class="filter-tag" data-filter="ootd">OOTD</button>
+                        </div>
+                    </div>
+                    <div class="outfit-grid">
+                        <!-- 这里将显示冬季穿搭 -->
+                    </div>
+                </section>
+            </div>
+
+            <!-- 类型视图 -->
+            <div id="type-view" class="view-container">
+                <section id="all-types" class="type-section">
+                    <h2>全部衣物</h2>
+                    <div class="outfit-grid">
+                        <!-- 所有衣物将加载到这里 -->
+                    </div>
+                </section>
+
+                <section id="shirt" class="type-section active">
+                    <h2>上衣</h2>
+                    <div class="season-filter">
+                        <span class="filter-label">季节：</span>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" data-filter="all">全部</button>
+                            <button class="filter-tag" data-filter="spring">春季</button>
+                            <button class="filter-tag" data-filter="summer">夏季</button>
+                            <button class="filter-tag" data-filter="autumn">秋季</button>
+                            <button class="filter-tag" data-filter="winter">冬季</button>
+                        </div>
+                    </div>
+                    <div class="outfit-grid">
+                        <!-- 上衣类别的所有衣服会动态加载到这里 -->
+                    </div>
+                </section>
+
+                <section id="pant" class="type-section">
+                    <h2>裤子</h2>
+                    <div class="season-filter">
+                        <span class="filter-label">季节：</span>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" data-filter="all">全部</button>
+                            <button class="filter-tag" data-filter="spring">春季</button>
+                            <button class="filter-tag" data-filter="summer">夏季</button>
+                            <button class="filter-tag" data-filter="autumn">秋季</button>
+                            <button class="filter-tag" data-filter="winter">冬季</button>
+                        </div>
+                    </div>
+                    <div class="outfit-grid">
+                        <!-- 裤子类别的所有衣服会动态加载到这里 -->
+                    </div>
+                </section>
+
+                <section id="skirt" class="type-section">
+                    <h2>裙子</h2>
+                    <div class="season-filter">
+                        <span class="filter-label">季节：</span>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" data-filter="all">全部</button>
+                            <button class="filter-tag" data-filter="spring">春季</button>
+                            <button class="filter-tag" data-filter="summer">夏季</button>
+                            <button class="filter-tag" data-filter="autumn">秋季</button>
+                            <button class="filter-tag" data-filter="winter">冬季</button>
+                        </div>
+                    </div>
+                    <div class="outfit-grid">
+                        <!-- 裙子类别的所有衣服会动态加载到这里 -->
+                    </div>
+                </section>
+
+                <section id="sock" class="type-section">
+                    <h2>袜子</h2>
+                    <div class="season-filter">
+                        <span class="filter-label">季节：</span>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" data-filter="all">全部</button>
+                            <button class="filter-tag" data-filter="spring">春季</button>
+                            <button class="filter-tag" data-filter="summer">夏季</button>
+                            <button class="filter-tag" data-filter="autumn">秋季</button>
+                            <button class="filter-tag" data-filter="winter">冬季</button>
+                        </div>
+                    </div>
+                    <div class="outfit-grid">
+                        <!-- 袜子类别的所有衣服会动态加载到这里 -->
+                    </div>
+                </section>
+
+                <section id="shoe" class="type-section">
+                    <h2>鞋子</h2>
+                    <div class="season-filter">
+                        <span class="filter-label">季节：</span>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" data-filter="all">全部</button>
+                            <button class="filter-tag" data-filter="spring">春季</button>
+                            <button class="filter-tag" data-filter="summer">夏季</button>
+                            <button class="filter-tag" data-filter="autumn">秋季</button>
+                            <button class="filter-tag" data-filter="winter">冬季</button>
+                        </div>
+                    </div>
+                    <div class="outfit-grid">
+                        <!-- 鞋子类别的所有衣服会动态加载到这里 -->
+                    </div>
+                </section>
+
+                <section id="accessory" class="type-section">
+                    <h2>配饰</h2>
+                    <div class="season-filter">
+                        <span class="filter-label">季节：</span>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" data-filter="all">全部</button>
+                            <button class="filter-tag" data-filter="spring">春季</button>
+                            <button class="filter-tag" data-filter="summer">夏季</button>
+                            <button class="filter-tag" data-filter="autumn">秋季</button>
+                            <button class="filter-tag" data-filter="winter">冬季</button>
+                        </div>
+                    </div>
+                    <div class="outfit-grid">
+                        <!-- 配饰类别的所有衣服会动态加载到这里 -->
+                    </div>
+                </section>
+
+                <section id="ootd" class="type-section">
+                    <h2>OOTD</h2>
+                    <div class="season-filter">
+                        <span class="filter-label">季节：</span>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" data-filter="all">全部</button>
+                            <button class="filter-tag" data-filter="spring">春季</button>
+                            <button class="filter-tag" data-filter="summer">夏季</button>
+                            <button class="filter-tag" data-filter="autumn">秋季</button>
+                            <button class="filter-tag" data-filter="winter">冬季</button>
+                        </div>
+                    </div>
+                    <div class="outfit-grid">
+                        <!-- OOTD类别会动态加载到这里 -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>个人衣橱管理 &copy; 2023</p>
+        <p><a href="javascript:window.location.reload();"
+                style="color: #999; text-decoration: underline; font-size: 0.8em;">刷新页面</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/add-outfit.js"></script>
+</body>
+
+</html>

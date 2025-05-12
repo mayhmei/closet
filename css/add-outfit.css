@@ -1,0 +1,183 @@
+/* 添加穿搭按钮样式 */
+.add-outfit-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.add-outfit-button:hover {
+    background-color: #2980b9;
+}
+
+.add-outfit-button i {
+    margin-right: 0.5rem;
+}
+
+/* 模态框样式 */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 2rem 0;
+}
+
+.add-outfit-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+.add-outfit-form h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.8rem;
+}
+
+/* 表单样式 */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* 季节和类型选项样式 */
+.season-options,
+.type-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.season-option,
+.type-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.season-option input[type="radio"],
+.type-option input[type="checkbox"] {
+    margin: 0;
+}
+
+.season-option label,
+.type-option label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* 无匹配穿搭样式 */
+.no-outfits {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.form-actions button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-actions button[type="button"] {
+    background-color: #e9e9e9;
+    border: none;
+    color: #333;
+}
+
+.form-actions button[type="button"]:hover {
+    background-color: #ddd;
+}
+
+.form-actions button[type="submit"] {
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+}
+
+.form-actions button[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* 文件上传样式 */
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 576px) {
+    .add-outfit-form {
+        padding: 1.5rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+
+    .season-options,
+    .type-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

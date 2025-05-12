@@ -1,0 +1,16 @@
+# 忽略所有jpg文件
+*.jpg
+
+# 忽略node_modules
+node_modules/
+
+# 忽略系统文件
+.DS_Store
+.env
+
+# 忽略日志文件
+*.log
+
+# 忽略IDE配置文件
+.vscode/
+.idea/ 
