@@ -1,6 +1,9 @@
 # 忽略所有jpg文件，但保留目录结构
 **/*.jpg
 
+# 不要忽略.gitkeep文件
+!.gitkeep
+
 # 忽略node_modules
 node_modules/
 
